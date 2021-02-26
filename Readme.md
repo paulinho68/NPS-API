@@ -3,12 +3,15 @@ Net Promoter Score is a metric that aims to measure customer satisfaction and lo
 
 ### Project To Construct API
 
-    - Techs:
-        - Express: <https://expressjs.com/pt-br/guide/routing.html>
-        - TypeOrm: <https://typeorm.io/#/>
-        - Sqlite3: <https://www.sqlite.org/index.html>
-        - Jest: <https://jestjs.io/>
-        - Typescript: <https://www.typescriptlang.org/docs/>
+Techs:
+- Express: <https://expressjs.com/pt-br/guide/routing.html>
+- TypeOrm: <https://typeorm.io/#/>
+- Sqlite3: <https://www.sqlite.org/index.html>
+- Jest: <https://jestjs.io/>
+- Typescript: <https://www.typescriptlang.org/docs/>
+- Yup: <https://github.com/jquense/yup>
+- Nodemailer: <https://nodemailer.com/about/>
+        
 
 
 ## How can i start this project?
@@ -20,21 +23,19 @@ Net Promoter Score is a metric that aims to measure customer satisfaction and lo
     - yarn typeorm migration:run
     - yarn dev
 
-    **OBS:** If you want use test. pay attention:
+    **OBS:** If you want use test. Pay attention:
         
         Change your package.json if necessary
 
         Windows: 
 
         "scripts": {
-            "test": "set NODE_ENV=test&&jest",
-            "posttest": "rimraf ./src/database/database.test.sqlite"
+            "test": "set NODE_ENV=test&&jest -i",
         }
 
         Linux:
         
         "scripts": {
-            "test": "NODE_ENV=test jest",
-            "posttest": "rm ./src/database/database.test.sqlite"
+            "test": "NODE_ENV=test jest -i",
         }
-        
+    
